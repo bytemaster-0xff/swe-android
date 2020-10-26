@@ -112,11 +112,14 @@ public class OperationInsertSensor extends AbstractSosOperation {
         insertSensor.setAttribute("service","SOS");
         insertSensor.setAttribute("version","2.0.0");
         doc.appendChild(insertSensor);
+
+
         Element procedureDescriptionFormat = doc.createElement(TAG_PROCEDURE_DESCRIPTION_FORMAT);
         procedureDescriptionFormat.setTextContent("http://www.opengis.net/sensorml/2.0");
         insertSensor.appendChild(procedureDescriptionFormat);
         Element procedureDescription = doc.createElement(TAG_PROCEDURE_DESCRIPTION);
         insertSensor.appendChild(procedureDescription);
+
         Element physicalSystem = doc.createElement(TAG_PHYSICAL_SYSTEM);
         procedureDescription.appendChild(physicalSystem);
         if (sosSensor.getId() != null)
@@ -127,6 +130,8 @@ public class OperationInsertSensor extends AbstractSosOperation {
             identifier.setTextContent(sosSensor.getUniqueId());
             physicalSystem.appendChild(identifier);
         }
+
+
         Element identification = doc.createElement(TAG_SML_IDENTIFICATION);
         physicalSystem.appendChild(identification);
         Element identifierList = doc.createElement(TAG_SML_IDENTIFIER_LIST);

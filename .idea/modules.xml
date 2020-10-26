@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SweLib/SweLib.iml" filepath="$PROJECT_DIR$/SweLib/SweLib.iml" group="swe-android/SweLib" />
+      <module fileurl="file://$PROJECT_DIR$/swe-android.iml" filepath="$PROJECT_DIR$/swe-android.iml" group="swe-android" />
+    </modules>
+  </component>
+</project>
